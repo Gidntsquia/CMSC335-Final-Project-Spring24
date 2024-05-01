@@ -88,7 +88,7 @@ app.post("/processName", async (request, response) => {
   fetchResponse = await fetch(`https://api.genderize.io/?name=${name}`);
   const genderInfo = await fetchResponse.json();
 
-  fetchResponse = await fetch(`https://api.agify.io?name=${name}`);
+  fetchResponse = await fetch(`https://api.agify.io/?name=${name}`);
   const ageInfo = await fetchResponse.json();
 
   insertNameToMongo(name);
