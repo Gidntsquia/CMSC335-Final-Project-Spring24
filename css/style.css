@@ -1,0 +1,10 @@
+h1 {
+  font-style: italic;
+  color: steelblue;
+  font-weight: bolder;
+}
+
+#nameBox {
+  border: 0.25rem blueviolet solid;
+  padding: 0.5rem;
+}

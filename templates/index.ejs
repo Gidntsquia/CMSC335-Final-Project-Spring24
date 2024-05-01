@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Name Genie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Name Genie</h1>
+    <form action="http://localhost:4000/processName" method="post">
+      Enter your name: <input type="text" name="name" required /> <br /><br />
+      <input type="submit" />
+    </form>
+
+    <h3>Most recent searches</h3>
+    <%- recentSearchList %>
+  </body>
+</html>
