@@ -61,7 +61,7 @@ app.get("/", async (request, response) => {
   const recentNames = await lookUpMostRecentNames(5);
   let recentSearchList = "<ol>";
 
-  recentNames.forEach((elem) => {
+  recentNames?.forEach((elem) => {
     recentSearchList += `<li>${elem.name}</li>`;
   });
 
