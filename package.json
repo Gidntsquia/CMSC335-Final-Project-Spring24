@@ -9,10 +9,8 @@
   "name": "final-project",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "build": "npm i",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install",
     "start": "node index.js"
   },
   "keywords": [],

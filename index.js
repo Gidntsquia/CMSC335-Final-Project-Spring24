@@ -15,7 +15,6 @@ const databaseAndCollection = {
 
 let portNumber;
 
-/* directory where templates will reside */
 app.set("views", path.resolve(__dirname, "templates"));
 app.use(express.static(__dirname + "/css"));
 app.set("view engine", "ejs");
@@ -26,7 +25,8 @@ const client = new MongoClient(uri, {
 });
 
 async function main() {
-  portNumber = 4000;
+  portNumber = 3000;
+
   app.listen(portNumber);
   console.log(
     `Web Server started and running at http://localhost:${portNumber}`
@@ -140,3 +140,5 @@ async function lookUpMostRecentNames(numNames) {
 }
 
 main().catch(console.error);
+
+module.exports = app;
